@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Essay Grader</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>AI Essay Grader</h1>
+        <p class="subtitle">Paste your essay below and get instant feedback powered by Google Gemini.</p>
+        
+        <form id="grading-form">
+            <textarea 
+                id="essay-input" 
+                placeholder="Start writing or paste your essay here..."
+                rows="15"
+                required
+            ></textarea>
+            <button type="submit" id="submit-btn">Grade My Essay</button>
+        </form>
+
+        <div id="results-container" class="hidden">
+            <h2>Grading Results</h2>
+            <div id="score-display"></div>
+            <div id="feedback-display"></div>
+        </div>
+
+         <div id="loading-indicator" class="hidden">
+            <div class="spinner"></div>
+            <p>Grading in progress, please wait...</p>
+        </div>
+
+        <div id="error-message" class="hidden"></div>
+
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
